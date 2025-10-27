@@ -3,7 +3,7 @@
 
 Summary:	A command line parser for C++11
 Name:		%{name}
-Version:	2.5.0
+Version:	2.6.1
 Release:	1
 Group:		Sciences/Other
 URL:		https://github.com/CLIUtils/%{oname}
