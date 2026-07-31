@@ -3,7 +3,7 @@
 
 Summary:	A command line parser for C++11
 Name:		%{name}
-Version:	2.6.1
+Version:	2.7.0
 Release:	1
 Group:		Sciences/Other
 URL:		https://github.com/CLIUtils/%{oname}
@@ -56,7 +56,7 @@ Documentation for CLI11.
 #-----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{oname}-%{version}
+%autosetup -p1 -n CLI11-2.7.0
  
 # alter the icon path in README.md for the installed paths
 sed -i.orig 's,\./docs,.,' README.md
