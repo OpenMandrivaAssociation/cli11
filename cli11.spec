@@ -3,12 +3,12 @@
 
 Summary:	A command line parser for C++11
 Name:		%{name}
-Version:	2.7.0
+Version:	2.7.2
 Release:	1
 Group:		Sciences/Other
 URL:		https://github.com/CLIUtils/%{oname}
 Source0:	https://github.com/CLIUtils/%{oname}/archive/v%{version}/%{name}-%{version}.tar.gz
-License:	BSD
+License:	BSD-3-Clause
 
 BuildArch:	noarch
 
@@ -27,8 +27,9 @@ rich feature set with a simple and intuitive interface.
 
 %package devel
 Summary:	A command line parser for C++11
+Group:          Development/C++
 #Provides:	%{name}-static = %{version}-%{release}
- 
+
 %description devel
 CLI11 is a command line parser for C++11 and beyond that provides a
 rich feature set with a simple and intuitive interface.
@@ -49,14 +50,14 @@ Summary:	Documentation for CLI11
 Documentation for CLI11.
  
 %files docs
-%doc %{_vpath_builddir}/docs/html
+#%doc %{_vpath_builddir}/docs/html
 %doc docs/%{oname}_100.png
 %doc docs/%{oname}.svg
 
 #-----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n CLI11-2.7.0
+%autosetup -p1 -n CLI11-%{version}
  
 # alter the icon path in README.md for the installed paths
 sed -i.orig 's,\./docs,.,' README.md
